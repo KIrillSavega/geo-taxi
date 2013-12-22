@@ -2,33 +2,33 @@
 
 class SubscribitionCache extends BaseCacheImplementation
 {
-    public function getEmployeeIdsSubscribedForEvent( $eventId )
+    public function getCustomerIdsSubscribedForEvent( $eventId )
     {
-        return $this->cache->get( CacheKey::employeeIdsBySubscribeEvent($eventId) );
+        return $this->cache->get( CacheKey::customerIdsBySubscribeEvent($eventId) );
     }
     
-    public function deleteEmployeeIdsSubscribedForEvent( $eventId )
+    public function deleteCustomerIdsSubscribedForEvent( $eventId )
     {
-        return $this->cache->delete( CacheKey::employeeIdsBySubscribeEvent($eventId) );
+        return $this->cache->delete( CacheKey::customerIdsBySubscribeEvent($eventId) );
     }
     
-    public function setEmployeeIdsSubscribedForEvent($eventId, array $ids)
+    public function setCustomerIdsSubscribedForEvent($eventId, array $ids)
     {
-        return $this->cache->set( CacheKey::employeeIdsBySubscribeEvent($eventId), $ids );
+        return $this->cache->set( CacheKey::customerIdsBySubscribeEvent($eventId), $ids );
     }
     
-    public function getSubscribitionIdsByEmployeeId( $employeeId )
+    public function getSubscribitionIdsByCustomerId( $customerId )
     {
-        return $this->cache->get( CacheKey::subscribeEventsByEmployeeId($employeeId) );
+        return $this->cache->get( CacheKey::subscribeEventsByCustomerId($customerId) );
     }
     
-    public function deleteSubscribitionIdsByEmployeeId( $employeeId )
+    public function deleteSubscribitionIdsByCustomerId( $customerId )
     {
-        return $this->cache->delete( CacheKey::subscribeEventsByEmployeeId($employeeId) );
+        return $this->cache->delete( CacheKey::subscribeEventsByCustomerId($customerId) );
     }
     
-    public function setSubscribitionIdsByEmployeeId( $employeeId, array $ids )
+    public function setSubscribitionIdsByCustomerId( $customerId, array $ids )
     {
-        return $this->cache->set( CacheKey::subscribeEventsByEmployeeId($employeeId), $ids );
+        return $this->cache->set( CacheKey::subscribeEventsByCustomerId($customerId), $ids );
     }
 }

@@ -1,7 +1,5 @@
 <?php
 
-define('POS_APP_ID', '1');
-
 return CMap::mergeArray(
         require(dirname(__FILE__) . '/../../../../core/config/main.php'),
         array(

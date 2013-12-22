@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "employee".
+ * This is the model class for table "customer".
  *
- * The followings are the available columns in table 'employee':
+ * The followings are the available columns in table 'customer':
  * @property integer $id
  * @property integer $permission_group_id
  * @property string $first_name
@@ -18,12 +18,12 @@
  * @property integer $status
  * @property integer $timezone
  */
-class EmployeeGii extends CActiveRecord
+class CustomerGii extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return EmployeeGii the static model class
+	 * @return CustomerGii the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -35,7 +35,7 @@ class EmployeeGii extends CActiveRecord
 	 */
 	public function getDbConnection()
 	{
-		return Yii::app()->dbEmployee;
+		return Yii::app()->dbCustomer;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class EmployeeGii extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'employee';
+		return 'customer';
 	}
 
 	/**

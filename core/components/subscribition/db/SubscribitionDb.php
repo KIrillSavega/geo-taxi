@@ -3,38 +3,38 @@ use core\components\subscribition\models as Models;
 
 class SubscribitionDb extends BaseDbImplementation
 {
-    public function findEmployeeIdsSubscribedForEvent($eventId)
+    public function findCustomerIdsSubscribedForEvent($eventId)
     {
         $result = array();
-        $records = Models\EmployeeSubscribe::model()->findAllByAttributes( array('event_id'=>$eventId) );
+        $records = Models\CustomerSubscribe::model()->findAllByAttributes( array('event_id'=>$eventId) );
         foreach($records as $record){
-            $result[] = $record->employee_id;
+            $result[] = $record->customer_id;
         }
         return $result;
     }
     
-    public function findSubscribitionIdsByEmployeeId( $employeeId )
+    public function findSubscribitionIdsByCustomerId( $customerId )
     {
         $result = array();
-        $records = Models\EmployeeSubscribe::model()->findAllByAttributes( array('employee_id'=>$employeeId) );
+        $records = Models\CustomerSubscribe::model()->findAllByAttributes( array('customer_id'=>$customerId) );
         foreach($records as $record){
             $result[] = $record->event_id;
         }
         return $result;
     }
     
-    public function subscribe($employeeId, $eventId)
+    public function subscribe($customerId, $eventId)
     {
-        $model = new Models\EmployeeSubscribe();
-        $model->employee_id = $employeeId;
+        $model = new Models\CustomerSubscribe();
+        $model->customer_id = $customerId;
         $model->event_id = $eventId;
         return $model->save() ? true : false;
     }
     
-    public function unsubscribe($employeeId, $eventId)
+    public function unsubscribe($customerId, $eventId)
     {
-        return Models\EmployeeSubscribe::model()->deleteByPk(array(
-            'employee_id' => $employeeId,
+        return Models\CustomerSubscribe::model()->deleteByPk(array(
+            'customer_id' => $customerId,
             'event_id' => $eventId,
         ));
     }

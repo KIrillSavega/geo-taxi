@@ -31,6 +31,7 @@ return array(
         ),
         //db connections:
         'dbLocation' => require(dirname(__FILE__) . '/db.php'),
+        'dbCustomer' => require(dirname(__FILE__) . '/db.php'),
 
         //redis
         'redisCache' => require(dirname(__FILE__) . '/redisCache.php'),
@@ -94,6 +95,13 @@ return array(
             'cacheComponent' => 'redisCache',
             'cacheClass' => 'LocationCache',
             'dbClass' => 'LocationDb',
+        ),
+
+        'customer' => array(
+            'class' => 'core.components.customer.Customer',
+            'cacheComponent' => 'redisCache',
+            'cacheClass' => 'CustomerCache',
+            'dbClass' => 'CustomerDb',
         ),
     ),
     'params' => require(dirname(__FILE__) . '/params.php'),

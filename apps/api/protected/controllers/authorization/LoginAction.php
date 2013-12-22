@@ -9,18 +9,25 @@ class LoginAction extends BaseApiAction
             array('password', 'required'),
         );
     }
-    
-    public function run( $pinCode, $posTerminalId )
+
+    public function run($username, $password)
     {
-        if(Yii::app()->user->isGuest){
-            $identity = new EmployeeIdentity($pinCode, $posTerminalId);
-            if( $identity->authenticate() ){
+        if (Yii::app()->user->isGuest) {
+            $identity = new CustomerIdentity($username, $password);
+            if ($identity->authenticate()) {
                 Yii::app()->user->login($identity);
-                $session = Yii::app()->apiSession();
-                $this->renderSuccess(array(
-                    'sessionId' => $session->id
-                ));
+                $this->renderResponse();
             }
+        } else {
+            $this->renderResponse();
         }
+    }
+
+    protected function renderResponse()
+    {
+        $session = Yii::app()->apiSession->getSession();
+        $this->renderSuccess(array(
+            'sessionId' => $session->id
+        ));
     }
 }

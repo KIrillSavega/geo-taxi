@@ -4,14 +4,14 @@
     <list default="true" id="96c7b3a0-1e79-407f-9457-952a627fdeb1" name="Default" comment="" />
     <ignored path="geo-taxi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.dummy" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387722982841" ignored="false" />
+    <file path="/a.dummy" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387738845970" ignored="false" />
     <file path="/db.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387707852777" ignored="false" />
     <file path="/Location.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387708280632" ignored="false" />
     <file path="/Dummy.txt" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387715030247" ignored="false" />
-    <file path="/*.regexp" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387715038598" ignored="false" />
+    <file path="/*.regexp" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387738849562" ignored="false" />
     <file path="/ApiWebUser.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387719833678" ignored="false" />
-    <file path="/LoginAction.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387721118852" ignored="false" />
-    <file path="/index.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387721522375" ignored="false" />
+    <file path="/LoginAction.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387739308228" ignored="false" />
+    <file path="/index.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737568084" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/web/CHttpSession.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431301" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/web/auth/CUserIdentity.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431301" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/collections/CMap.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431301" ignored="false" />
@@ -26,6 +26,21 @@
     <file path="$PROJECT_DIR$/yiiframework/base/CApplication.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/logging/CLogger.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/web/CController.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
+    <file path="/Employee.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727117317" ignored="false" />
+    <file path="/EmployeeCache.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727026564" ignored="false" />
+    <file path="/CacheKey.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727038333" ignored="false" />
+    <file path="/EmployeeDb.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727295120" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/employee/models/gii/EmployeeGii.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/employee/models/gii/EmployeePermissionGroupGii.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/subscribition/models/EmployeeSubscribe.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/subscribition/models/gii/EmployeeSubscribeGii.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/subscribition/db/SubscribitionDb.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="$PROJECT_DIR$/core/components/subscribition/cache/SubscribitionCache.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727926998" ignored="false" />
+    <file path="/MigrateCustomerCommand.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737289705" ignored="false" />
+    <file path="/CustomerContainer.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737331140" ignored="false" />
+    <file path="/documentation.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737602477" ignored="false" />
+    <file path="/m131222_183450_customer_initial.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737687642" ignored="false" />
+    <file path="/CustomerIdentity.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387739123668" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,34 +63,88 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="25" selection-start="939" selection-end="939" vertical-scroll-proportion="-3.75">
+            <state line="33" column="19" selection-start="1023" selection-end="1023" vertical-scroll-proportion="15.541667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m130520_104411_address_schema.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/migrations/location/m130520_104411_address_schema.php">
+      <file leaf-file-name="Customer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/components/customer/Customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="-4.375">
+            <state line="52" column="42" selection-start="1295" selection-end="1295" vertical-scroll-proportion="-13.333333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationDb.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/components/location/db/LocationDb.php">
+      <file leaf-file-name="CustomerDb.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/components/customer/db/CustomerDb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="61" selection-end="71" vertical-scroll-proportion="-2.5">
+            <state line="79" column="24" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-38.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/config/db.php">
+      <file leaf-file-name="ApiWebUser.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/protected/components/ApiWebUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="27" selection-start="136" selection-end="144" vertical-scroll-proportion="0.12647554">
+            <state line="10" column="41" selection-start="210" selection-end="220" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CacheKey.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/components/cache/CacheKey.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="5" selection-start="1337" selection-end="1337" vertical-scroll-proportion="-38.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiSessionContainer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/containers/ApiSessionContainer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="15" selection-start="51" selection-end="51" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="444" selection-end="444" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginAction.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/LoginAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="1" selection-start="48" selection-end="48" vertical-scroll-proportion="0.075885326">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiRedisSession.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/protected/components/ApiRedisSession.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="51" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-26.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerIdentity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/components/CustomerIdentity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="30" selection-start="732" selection-end="732" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
@@ -91,32 +160,32 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/components/location/Location.php" />
-        <option value="$PROJECT_DIR$/core/config/dbLocation.php" />
-        <option value="$PROJECT_DIR$/core/config/db.php" />
-        <option value="$PROJECT_DIR$/apps/api/index.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/base/BaseApiController.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/components/ApiRedisSession.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/components/ApiWebUser.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/config/urlManager.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/LoginAction.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/LogoutAction.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/location/CountriesListAction.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/DocumentationController.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/views/documentation/index.php" />
-        <option value="$PROJECT_DIR$/core/autocompleteIDE/autocomplete.php" />
-        <option value="$PROJECT_DIR$/core/components/base/BaseAppComponent.php" />
-        <option value="$PROJECT_DIR$/core/components/subscribition/Subscribition.php" />
-        <option value="$PROJECT_DIR$/core/config/fileUploader.php" />
-        <option value="$PROJECT_DIR$/core/config/dbAccount.php" />
         <option value="$PROJECT_DIR$/core/config/dbCustomer.php" />
-        <option value="$PROJECT_DIR$/core/config/params.php" />
         <option value="$PROJECT_DIR$/core/config/storageSettings.php" />
-        <option value="$PROJECT_DIR$/core/containers/EmployeeContainer.php" />
         <option value="$PROJECT_DIR$/core/helpers/UserHelper.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/runtime/application.log" />
+        <option value="$PROJECT_DIR$/core/components/employee/cache/EmployeeCache.php" />
+        <option value="$PROJECT_DIR$/core/components/employee/db/EmployeeDb.php" />
+        <option value="$PROJECT_DIR$/core/components/employee/Employee.php" />
+        <option value="$PROJECT_DIR$/core/containers/EmployeeContainer.php" />
+        <option value="$PROJECT_DIR$/apps/storage/css/general.css" />
+        <option value="$PROJECT_DIR$/core/cli/commands/MigrateCustomerCommand.php" />
+        <option value="$PROJECT_DIR$/core/containers/CustomerContainer.php" />
+        <option value="$PROJECT_DIR$/apps/api/index.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/views/layouts/documentation.php" />
+        <option value="$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php" />
+        <option value="$PROJECT_DIR$/core/config/params.php" />
+        <option value="$PROJECT_DIR$/core/autocompleteIDE/autocomplete.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php" />
+        <option value="$PROJECT_DIR$/core/containers/ApiSessionContainer.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/config/main.php" />
         <option value="$PROJECT_DIR$/core/config/main.php" />
+        <option value="$PROJECT_DIR$/core/components/customer/Customer.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/components/ApiRedisSession.php" />
+        <option value="$PROJECT_DIR$/core/components/cache/CacheKey.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/components/ApiWebUser.php" />
+        <option value="$PROJECT_DIR$/core/components/CustomerIdentity.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/LoginAction.php" />
       </list>
     </option>
   </component>
@@ -203,8 +272,26 @@
               <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,7 +403,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,33 +425,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geo-taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geo-taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -387,10 +448,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -469,8 +526,22 @@
               <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,33 +559,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geo-taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geo-taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,11 +581,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +604,100 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authorization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,6 +711,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/cli/commands" />
       <recent name="$PROJECT_DIR$/core/components" />
       <recent name="$PROJECT_DIR$/core/components/base" />
       <recent name="$PROJECT_DIR$/apps" />
@@ -589,7 +737,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-8" width="1384" height="760" extended-state="1" />
+    <frame x="-9" y="-8" width="1384" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -672,163 +820,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/config/assetManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/fileUploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="94" selection-start="221" selection-end="228" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/notification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/redisCache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/redisPersistentStorage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/storageSettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="270" selection-end="270" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/components/notification/db/NotificationDb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/containers/EmailContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="13" selection-end="27" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/containers/AddressContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="13" selection-end="29" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/containers/EmployeeContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="49" selection-end="49" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/containers/FileContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/containers/NotificationContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/extensions/menu/AdminMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/helpers/UserHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="666" selection-end="666" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/cli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/shell">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/storage/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/storage/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/storage/js/widgets/dropdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/cli/commands/MigrateLocationCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/migrations/location/m130520_104411_address_schema.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/runtime/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/runtime/application.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -840,16 +848,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/main.php">
+    <entry file="file://$PROJECT_DIR$/core/config/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="939" selection-end="939" vertical-scroll-proportion="-3.75">
+        <state line="9" column="2" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/db.php">
+    <entry file="file://$PROJECT_DIR$/core/components/customer/cache/CustomerCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="136" selection-end="144" vertical-scroll-proportion="0.12647554">
+        <state line="78" column="52" selection-start="2055" selection-end="2055" vertical-scroll-proportion="-23.87755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/storage/css/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1079" column="20" selection-start="37964" selection-end="37964" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/cli/commands/MigrateCustomerCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="28" selection-end="28" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/containers/CustomerContainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="165" selection-end="165" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/helpers/UserHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="36" selection-start="327" selection-end="327" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/views/layouts/documentation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="651" selection-end="651" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="99" selection-end="99" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/autocompleteIDE/autocomplete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="74" selection-end="74" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="1023" selection-end="1023" vertical-scroll-proportion="15.541667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/customer/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="42" selection-start="1295" selection-end="1295" vertical-scroll-proportion="-13.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/customer/db/CustomerDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="24" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-38.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="444" selection-end="444" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/containers/ApiSessionContainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="15" selection-start="51" selection-end="51" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/components/ApiWebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="41" selection-start="210" selection-end="220" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/cache/CacheKey.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="5" selection-start="1337" selection-end="1337" vertical-scroll-proportion="-38.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/components/ApiRedisSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="51" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-26.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/CustomerIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="30" selection-start="732" selection-end="732" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/LoginAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="48" selection-end="48" vertical-scroll-proportion="0.075885326">
           <folding />
         </state>
       </provider>

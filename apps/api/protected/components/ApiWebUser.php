@@ -9,26 +9,63 @@ class ApiWebUser extends CWebUser
         CApplicationComponent::init();
         $this->clearStates();
         $session = Yii::app()->apiSession->open();
-        if ($session instanceof ApiSessionContainer) {
-            if (is_array($session->states)) {
-                foreach ($session->states as $key => $value) {
+        if( $session instanceof ApiSessionContainer){
+            if(is_array($session->states) ){
+                foreach( $session->states as $key => $value ){
                     $this->setState($key, $value);
                 }
             }
             $this->setId($session->userId);
-            $this->setState('appId', $session->appId);
             $this->setState('name', $session->name);
-            if ($this->autoRenewCookie && $this->allowAutoLogin) {
+            if($this->autoRenewCookie && $this->allowAutoLogin){
                 Yii::app()->apiSession->renew();
             }
         }
     }
 
+    public function getPosTerminalId()
+    {
+        return $this->getState('posTerminalId');
+    }
+
+    public function getSalesOutletId()
+    {
+        $terminalId = $this->getPosTerminalId();
+        $terminal = Yii::app()->posTerminal->getById($terminalId);
+        return $terminal ? $terminal->salesOutletId : null;
+    }
+
+    public function getState($key,$defaultValue=null)
+    {
+        $key=$this->getStateKeyPrefix().$key;
+        return isset($this->_state[$key]) ? $this->_state[$key] : $defaultValue;
+    }
+
+    public function setState($key,$value,$defaultValue=null)
+    {
+        $key=$this->getStateKeyPrefix().$key;
+        if($value===$defaultValue)
+            unset($this->_state[$key]);
+        else
+            $this->_state[$key]=$value;
+    }
+
+    public function hasState($key)
+    {
+        $key=$this->getStateKeyPrefix().$key;
+        return isset($this->_state[$key]);
+    }
+
+    public function clearStates()
+    {
+        $this->_state = array();
+    }
+
     public function loginRequired()
     {
         $action = Yii::app()->controller->action;
-        if ($action instanceof BaseApiAction) {
-            $action->renderError($action::ERR_AUTH);
+        if( $action instanceof BaseApiAction){
+            $action->renderError( $action::ERR_AUTH );
         } else {
             echo "403 Authorization required";
             Yii::app()->end();
@@ -37,10 +74,10 @@ class ApiWebUser extends CWebUser
 
     public function login($identity, $duration = 0)
     {
-        $id = $identity->getId();
-        $states = $identity->getPersistentStates();
-        if ($this->beforeLogin($id, $states, false)) {
-            $this->changeIdentity($id, $identity->getName(), $states);
+        $id=$identity->getId();
+        $states=$identity->getPersistentStates();
+        if($this->beforeLogin($id,$states,false)){
+            $this->changeIdentity($id,$identity->getName(),$states);
             $this->afterLogin(false);
         }
         return !$this->getIsGuest();
@@ -49,11 +86,9 @@ class ApiWebUser extends CWebUser
     protected function changeIdentity($id, $name, $states)
     {
         $session = new ApiSessionContainer();
-        $session->appId = POS_APP_ID;
         $session->states = $states;
         $session->userId = $id;
         $session->name = $name;
-        $session->posTerminalId = $states['posTerminalId'];
         $session = Yii::app()->apiSession->create($session);
         $this->setId($id);
         $this->setName($name);
@@ -62,7 +97,8 @@ class ApiWebUser extends CWebUser
 
     public function logout()
     {
-        if ($this->beforeLogout()) {
+        if($this->beforeLogout())
+        {
             Yii::app()->apiSession->close();
             $this->clearStates();
             $this->afterLogout();

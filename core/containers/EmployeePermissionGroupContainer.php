@@ -1,6 +1,6 @@
 <?php
 
-class EmployeePermissionGroupContainer 
+class CustomerPermissionGroupContainer
 {
     public $id;
     public $title;
@@ -54,12 +54,12 @@ class EmployeePermissionGroupContainer
     public $updateTax;
     public $deleteTax;
 
-    public $viewEmployeeList;
-    public $viewEmployeeDetails;
-    public $createEmployee;
-    public $updateEmployee;
-    public $deleteEmployee;
-    public $editEmployeeSubscribitions;
+    public $viewCustomerList;
+    public $viewCustomerDetails;
+    public $createCustomer;
+    public $updateCustomer;
+    public $deleteCustomer;
+    public $editCustomerSubscribitions;
     public $updateWorkTime;
 
     public $viewPermissionGroupList;

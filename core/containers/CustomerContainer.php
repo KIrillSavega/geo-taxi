@@ -1,6 +1,5 @@
 <?php
-
-class EmployeeContainer 
+class CustomerContainer
 {
     public $id;
     public $firstName;

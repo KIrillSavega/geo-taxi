@@ -1,6 +1,6 @@
 <?php
 namespace core\components\subscribition\models;
-class EmployeeSubscribe extends \EmployeeSubscribeGii
+class CustomerSubscribe extends \CustomerSubscribeGii
 {
     public static function model($className=__CLASS__)
     {

@@ -1077,8 +1077,8 @@ ul.checkout_progress{border: 1px solid #dbdbdb;background-color: #fff;}
 .features_list  .ft_customer{
     background:  url(images/post_images/ic_customer.png) center center no-repeat;
 }
-.features_list  .ft_employee{
-    background:  url(images/post_images/ic_employee.png) center center no-repeat;
+.features_list  .ft_customer{
+    background:  url(images/post_images/ic_customer.png) center center no-repeat;
 }
 .simple_slider .gallery_item{
     margin: 0 20px 0 0;
