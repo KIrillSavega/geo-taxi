@@ -1,0 +1,152 @@
+
+body{
+    background: url(images/textures_for_themes/texture_1.png) 0 0 repeat;
+}
+
+/*DEFAULT COLOR*/
+p, li, ul, h1, h2, h3, h4,
+h5, h6, a,ol,body, html,
+blockquote, table, tr, td, span, object {
+    color: #666666;
+}
+
+/*HOVER LINKS*/
+body a:hover{
+    color:#666666;
+}
+/*ACTIVE LINKS*/
+body a:active{
+    color:#666666;
+}
+
+/*HEADER INFORMATION*/
+.information_container{
+    background-color: #cba303;
+}
+.information_container div,.information_container div a{
+    color: #ffffff;
+}
+/*MENU*/
+#navi a{
+    color: #666666;
+}
+/*mobile menu*/
+/*headers*/
+.view_header,#brands .checked{
+    background-color:#cba303;
+}
+/*header and titles font color*/
+.view_header_cels>div, h4, .checkout_headers,.catalog_view_settings>.category,
+.category_header_catalog>div:first-child,.category_header_filters>div:first-child,
+.category_header_filters>div:first-child{
+    color:#ffffff;
+}
+.view_header_cels>div, h4, .checkout_headers,.catalog_view_settings>.category,
+.catalog_view_settings>.price,
+.category_header_catalog>div:first-child,.category_header_filters>div:first-child,
+.category_header_filters>div:first-child{
+    background-color: #666666;
+}
+
+
+/*CATALOG LEFT SIDEBAR MENU THIRD LEVEL*/
+.category_header_catalog ul>li>ul>li>ul>li {background-color:#666666;}
+#left_sidebar ul>li>ul>li.active>ul>li>a {color:#cccccc;}
+
+/*CATALOG LEFT SIDEBAR MENU SECOND LEVEL*/
+.category_header_catalog ul>li>ul>li,#brands {background-color:#666666;}
+.category_header_catalog ul>li>ul>li a,#brands span{color: #ffffff;}
+
+/*CHECKED FILTER BY BRAND COLOR*/
+#brands li.checked span{color: #ffffff;}
+
+
+/*MENU TITLE COLORS*/
+.category_header_catalog>div:first-child,
+.category_header_filters>div:first-child,.catalog_view_settings>.category,
+#navi>li ul>li:hover{
+    color: #ffffff;
+}
+
+/*BUTTONS STYLE*/
+.buttons_style, .choose_quantity input[type='button'],.view_tile,.view_list {
+    background-color: #666666;
+    color: #ffffff;
+}
+.buttons_style:hover,.choose_quantity input[type='button']:hover,.view_tile:hover,.view_list:hover{
+    background-color: #666666;
+    color:#ffffff;
+}
+.buttons_style:active,.choose_quantity input[type='button']:active,.view_tile.active,.view_list.active{
+    background-color:#cba303;
+    color: #ffffff;
+}
+/*disbled button*/
+.choose_quantity input.disabled,
+.viewed_side input.disabled,
+.buttons_style.disabled{
+    background-color: #666666;
+}
+
+/*COLORS FOR SMALL ELEMENTS AS BREADCRUMBS, PRICES ETC*/
+#navi>li.active a,
+#navi>li a:hover,
+#breadcrumbs a,
+p>a,
+#breadcrumbs span,
+#breadcrumbs,
+.cart_page .header>a,
+.search_container a:hover,
+#step-pay a,
+.order_item_info a,
+.right_path .add_address:active>div,
+span.item_price{
+    color:#cba303;
+}
+
+/*SEARCH FIELD BORDER COLOR*/
+.search_container input.active{
+    border-color: #cba303;
+}
+
+/*FOOTER STYLE*/
+.footer_content>span{
+    color:#666666;
+}
+#footer{
+    background-color: #cba303;
+}
+
+/*MOBILE MENU LINK COLORS*/
+#mobile_navi li>a,#mobile_navi li>span{
+    color:#666666;
+}
+
+/*GALLERY PAGINATION COLOR*/
+.swiper-active-switch{
+    background-color: #cba303;
+}
+
+/* NOTES */
+.item_review>ul>li{
+    background-color: #666666;
+}
+.item_review>ul>li.active{
+    background-color: #ffffff;
+}
+
+/*HEADER TABS FROM USER INFO PAGE*/
+.page_tabs>li{
+    background-color: #ffffff;
+}
+.page_tabs>li.active{
+    background-color: #ffffff;
+}
+.page_tabs>li a{
+    color: #666666;
+}
+.page_tabs>li.active a{
+    color: #cba303;
+}
+
+

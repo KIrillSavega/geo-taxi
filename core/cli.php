@@ -1,4 +1,9 @@
 <?php
+/**
+ * Created by Anton Logvinenko.
+ * Date: 3/11/13
+ * Time: 7:17 PM
+ */
 
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 defined('YII_DEBUG') or define('YII_DEBUG', true);

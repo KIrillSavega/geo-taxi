@@ -1,14 +1,19 @@
 <?php
 
-class Location extends CApplicationComponent
+class Location extends BaseAppComponent
 {
     public $countryCodes = array();
 
     /**
      * object that implements DB operations
-     * @var db
+     * @var LocationDb
      */
     protected $_db;
+    /**
+     * object that implements Cache operations
+     * @var LocationCache
+     */
+    protected $_cache;
 
     public function init()
     {
@@ -16,27 +21,103 @@ class Location extends CApplicationComponent
         $this->countryCodes = require(dirname(__FILE__) . '/countryCodes.php');
     }
 
-    public function getById($id)
+    /**
+     * @param $id
+     * @return AddressContainer
+     */
+    public function getAddressById($id)
     {
-        return $this->_db->findById($id);
+        return $this->baseGetById($id, array(
+            'cacheGetter' => 'getAddressById',
+            'cacheSetter' => 'setAddress',
+            'dbFinderById' => 'findAddressById'
+        ));
     }
 
-    public function getAllByIds($ids)
+    /**
+     * @param $IDs
+     * @return array
+     */
+    public function getAllAddressesByIds($IDs)
     {
-        return $this->_db->findAllByIds($ids);
+        return $this->baseGetAllByIds($IDs, array(
+            'cacheGetter' => 'getAllAddressesByIds',
+            'cacheSetterAll' => 'setAllAddresses',
+            'dbFinderAllByIds' => 'findAllAddressesByIds'
+        ));
     }
 
-    public function create($model)
+    /**
+     * @param AddressContainer $container
+     * @return AddressContainer
+     */
+    public function createAddress(AddressContainer $container)
     {
-        return $this->_db->create($model);
+        $container->country = strtolower($container->country);
+        $container = $this->_db->createAddress($container);
+        if ($container) {
+            $this->_cache->setAddress($container);
+        }
+
+        return $container;
     }
 
-    public function update($model)
+    /**
+     * @param AddressContainer $container
+     * @return AddressContainer
+     */
+    public function updateAddress(AddressContainer $container)
     {
-        return $this->_db->update($model);
+        $container->country = strtolower($container->country);
+        $updatedAddress = $this->_db->updateAddress($container);
+        if ($updatedAddress) {
+            $this->_cache->setAddress($updatedAddress);
+        }
+
+        return $updatedAddress;
     }
 
-    public function getCountryNameByCode($countryCode)
+    /**
+     * @param $attributeValue
+     * @param $addressDbMethod
+     * @param $cacheKeyCallback
+     * @return integer
+     */
+    protected function getIdByAttribute($attributeValue, $addressDbMethod, $cacheKeyCallback)
+    {
+        if (empty($attributeValue)) {
+            return null;
+        }
+        $id = $this->_cache->getAddressIdByAttribute($cacheKeyCallback, $attributeValue);
+        if (!$id) {
+            $id = $this->_db->{$addressDbMethod}($attributeValue);
+            $this->_cache->setAddressIdByAttribute($cacheKeyCallback, $attributeValue, $id);
+        }
+
+        return $id;
+    }
+
+    /**
+     * @param $id
+     * @return boolean
+     */
+    public function deleteAddressById($id)
+    {
+        $address = $this->getAddressById($id);
+        if (!isset($address->id)) {
+            return false;
+        }
+        if ($this->_db->deleteAddressById($address->id) == true) {
+            $this->_cache->clearAddress($address);
+            return true;
+        }
+    }
+
+    /**
+     * @param $countryCode
+     * @return mixed
+     */
+    public function getCountryNameByCode( $countryCode )
     {
         $countryCode = strtolower($countryCode);
         if (isset($this->countryCodes[$countryCode])) {
@@ -44,7 +125,11 @@ class Location extends CApplicationComponent
         }
     }
 
-    public function getCountryCodeByName($countryName)
+    /**
+     * @param $countryName
+     * @return string
+     */
+    public function getCountryCodeByName( $countryName )
     {
         $countryName = strtolower($countryName);
         foreach ($this->countryCodes as $country_code => $country_name) {
@@ -55,6 +140,9 @@ class Location extends CApplicationComponent
         }
     }
 
+    /**
+     * @return array
+     */
     public function getCountryList()
     {
         $countryList = $this->countryCodes;
@@ -63,23 +151,46 @@ class Location extends CApplicationComponent
         return $countryList;
     }
 
+    /**
+     * @param $id
+     * @return string
+     */
     public function getAddressStringById( $id )
     {
-        $address = $this->getById( $id );
+        $address = $this->getAddressById( $id );
         if( $address ) {
-            return $this->getAddressStringByModel( $address );
+            return $this->getAddressStringByContainer( $address );
         }
     }
 
-    public function getAddressStringByContainer($address)
+    /**
+     * @param AddressContainer $addressContainer
+     * @return string
+     */
+    public function getAddressStringByContainer($addressContainer)
     {
-        $addressString = $address->addressLine1;
-        $addressString .= ($address->addressLine2)? ',' . $address->addressLine2 : '';
-        $addressString .= ',' . $address->city;
-        $addressString .= ($address->region)? ', ' . $address->region : '';
-        $addressString .= ', ' . $address->postalCode;
-        $addressString .= ', ' . $this->getCountryNameByCode($address->country);
+        if ($addressContainer instanceof AddressContainer) {
+            $address = $addressContainer->addressLine1;
+            $address .= ($addressContainer->addressLine2)? ',' . $addressContainer->addressLine2 : '';
+            $address .= ',' . $addressContainer->city;
+            $address .= ($addressContainer->region)? ', ' . $addressContainer->region : '';
+            $address .= ', ' . $addressContainer->postalCode;
+            $address .= ', ' . $this->getCountryNameByCode($addressContainer->country);
 
-        return $addressString;
+            return $address;
+        }
+    }
+
+    public function getAddressForReportByContainer($addressContainer)
+    {
+        if ($addressContainer instanceof AddressContainer) {
+            $address = $addressContainer->addressLine1;
+            $address .= ($addressContainer->addressLine2)? '<br/> ' . $addressContainer->addressLine2 : '';
+            $address .= '<br/>' . $addressContainer->city . ', ';
+            $address .= ($addressContainer->region) ? ' ' . $addressContainer->region : '';
+            $address .= ' ' . $addressContainer->postalCode;
+
+            return $address;
+        }
     }
 }

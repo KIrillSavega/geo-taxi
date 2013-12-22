@@ -1,0 +1,6 @@
+# behat.yml
+imports:
+    - 'PHPUnit/Autoload.php'
+    - 'bootstrap.php'
+    - 'StorageTestCase.php'
+    - '../../../tests/BaseComponentContext.php'

@@ -1,8 +1,14 @@
 <?php
+/**
+ * Created by Anton Logvinenko.
+ * email: a.logvinenko@mobidev.biz
+ * Date: 3/22/13
+ * Time: 3:17 PM
+ */
 
 class UserHelper
 {
-    const salt = 'ololosha2013!';
+    const salt = 'ololosha13!';
 
     public static function hashPassword($password)
     {

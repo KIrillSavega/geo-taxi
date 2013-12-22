@@ -1,0 +1,151 @@
+/*DEFAULT COLOR*/
+p, li, ul, h1, h2, h3, h4,
+h5, h6, a,ol,body, html,
+blockquote, table, tr, td, span, object {
+    color: #252525;
+}
+
+body{
+    background: url(images/textures_for_themes/texture_1.png) 0 0 repeat;
+}
+/*HOVER LINKS*/
+body a:hover{
+    color:#00549c;
+}
+/*ACTIVE LINKS*/
+body a:active{
+    color:#00549c;
+}
+
+/*HEADER INFORMATION*/
+.information_container{
+    background-color: #252525;
+}
+.information_container div{
+    color: #fff;
+}
+/*MENU*/
+#navi a{
+    color: #252525;
+}
+/*mobile menu*/
+/*headers*/
+.view_header,#brands .checked{
+    background-color:#00549c;
+}
+/*header and titles font color*/
+.view_header_cels>div, h4, .checkout_headers,.catalog_view_settings>.category,
+.category_header_catalog>div:first-child,.category_header_filters>div:first-child,
+.category_header_filters>div:first-child{
+    color:#fff;
+}
+.view_header_cels>div, h4, .checkout_headers,.catalog_view_settings>.category,
+.category_header_catalog>div:first-child,.category_header_filters>div:first-child,
+.category_header_filters>div:first-child{
+    background-color: #146fc0;
+}
+
+/*CATALOG LEFT SIDEBAR MENU THIRD LEVEL*/
+.category_header_catalog ul>li>ul>li>ul>li {background-color:#EFEFEF;}
+#left_sidebar ul>li>ul>li.active>ul>li>a {color:#252525;}
+.category_header_catalog ul>li>ul>li>ul>li a{color: #252525;}
+
+/*CATALOG LEFT SIDEBAR MENU SECOND LEVEL*/
+.category_header_catalog ul>li>ul>li {background-color:#146FC0;}
+.category_header_catalog ul>li>ul>li a{color: #FFF;}
+
+
+/*CHECKED FILTER BY BRAND COLOR*/
+#brands li.checked span{color: #fff;}
+
+
+/*MENU TITLE COLORS*/
+.category_header_catalog>div:first-child,
+.category_header_filters>div:first-child,.catalog_view_settings>.category,
+#navi>li ul>li:hover{
+    color: #fff;
+}
+
+/*BUTTONS STYLE*/
+.buttons_style, .choose_quantity input[type='button'],.view_tile,.view_list {
+    background-color: #252525;
+    color: #fff;
+}
+.buttons_style:hover,.choose_quantity input[type='button']:hover,.view_tile:hover,.view_list:hover{
+    background-color: #252525;
+    color: #fff;
+}
+.buttons_style:active,.choose_quantity input[type='button']:active,.view_tile.active,.view_list.active{
+    background-color: #146FC0;
+    color: #fff;
+}
+/*disabled button*/
+.choose_quantity input.disabled,
+.viewed_side input.disabled,
+.buttons_style.disabled{
+    opacity: 0.5;
+    background-color: #929292;
+}
+
+/*COLORS FOR SMALL ELEMENTS AS BREADCRUMBS, PRICES ETC*/
+#navi>li.active a,
+#navi>li a:hover,
+#breadcrumbs a,
+p>a,
+#breadcrumbs span,
+#breadcrumbs,
+.cart_page .header>a,
+.search_container a:hover,
+#step-pay a,
+.order_item_info a,
+.right_path .add_address:active>div,
+.item_price, .total_item_price, .sub_item_price, .tax_item_price{
+    color:#00549c;
+}
+
+/*SEARCH FIELD BORDER COLOR*/
+.search_container input.active{
+    border-color: #146fc0;
+}
+
+/*FOOTER STYLE*/
+.footer_content>span{
+    color:#fff;
+}
+#footer{
+    background-color: #252525;
+}
+
+/*MOBILE MENU LINK COLORS*/
+#mobile_navi li>a,#mobile_navi li>span{
+    color:#fff;
+}
+
+/*GALLERY PAGINATION COLOR*/
+.swiper-active-switch{
+    background-color: #00549c;
+}
+
+/* NOTES */
+.item_review>ul>li{
+    background-color: #252525;
+}
+.item_review>ul>li.active{
+    background-color: #00549c;
+}
+
+/*HEADER TABS FROM USER INFO PAGE*/
+.page_tabs>li{
+    background-color: #252525;
+}
+.page_tabs>li.active{
+    background-color: #00549c;
+}
+.page_tabs>li a{
+    color: #fff;
+}
+.page_tabs>li.active a{
+    color: #fff;
+}
+
+
