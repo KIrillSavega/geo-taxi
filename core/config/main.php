@@ -30,6 +30,7 @@ return array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
         //db connections:
+        'db' => require(dirname(__FILE__) . '/db.php'),
         'dbLocation' => require(dirname(__FILE__) . '/db.php'),
         'dbCustomer' => require(dirname(__FILE__) . '/db.php'),
 

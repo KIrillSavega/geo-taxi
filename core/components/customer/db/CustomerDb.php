@@ -6,11 +6,11 @@ class CustomerDb extends BaseDbImplementation
     public $containerRules = array(
         'CustomerContainer' => array(
             'id' => array('skipOnUpdate' => true, 'skipOnInsert' => true),
-            'firstName' => array('dbKey' => 'first_name', 'purify' => 'purifyText'),
-            'lastName' => array('dbKey' => 'last_name', 'purify' => 'purifyText'),
-            'privateEmail' => array('dbKey' => 'private_email', 'purify' => 'purifyText'),
-            'mobilePhone' => array('dbKey' => 'mobile_phone', 'purify' => 'purifyText'),
-            'password' => array('skipOnUpdate' => true, 'skipOnInsert' => false, 'purify' => 'purifyText'),
+            'firstName' => array('dbKey' => 'first_name'),
+            'lastName' => array('dbKey' => 'last_name'),
+            'privateEmail' => array('dbKey' => 'private_email'),
+            'mobilePhone' => array('dbKey' => 'mobile_phone'),
+            'password' => array('skipOnUpdate' => true, 'skipOnInsert' => false),
         ),
     );
 

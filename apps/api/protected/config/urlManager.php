@@ -12,6 +12,8 @@ return array(
         'authorization/login/' => array('authorization/login'),
         '<format:\w+>/authorization/logout' => array('authorization/logout'),
         'authorization/logout/' => array('authorization/logout'),
+        '<format:\w+>/authorization/registration' => array('authorization/registration'),
+        'authorization/registration/' => array('authorization/registration'),
 
         '<format:\w+>/location/countries' => array('location/countrylist'),
         'location/countries' => array('location/countrylist'),

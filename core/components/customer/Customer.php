@@ -17,7 +17,7 @@ class Customer extends BaseAppComponent
      * @param CustomerContainer $container
      * @return CustomerContainer
      */
-    public function createCustomer(CustomerContainer $container)
+    public function create(CustomerContainer $container)
     {
         $container->password = UserHelper::hashPassword($container->password);
         $container = $this->_db->create($container);
@@ -58,7 +58,7 @@ class Customer extends BaseAppComponent
      * @param CustomerContainer $container
      * @return CustomerContainer
      */
-    public function updateCustomer(CustomerContainer $container)
+    public function update(CustomerContainer $container)
     {
         $notUpdatedCustomer = $this->getById($container->id);
         $updated = $this->_db->update($container);
@@ -74,7 +74,7 @@ class Customer extends BaseAppComponent
      * @param CustomerContainer $container
      * @return CustomerContainer|null
      */
-    public function updateCustomerPassword(CustomerContainer $container)
+    public function updatePassword(CustomerContainer $container)
     {
         $defaultContainer = $this->getById($container->id);
         $newPassword = UserHelper::hashPassword($container->password);

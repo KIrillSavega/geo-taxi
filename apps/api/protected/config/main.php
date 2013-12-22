@@ -29,5 +29,14 @@ return CMap::mergeArray(
                     'sessionLifeTime' => 60*60*24,
                 ),
             ),
+            'modules' => array(
+                'gii'=>array(
+                    'class' => 'system.gii.GiiModule',
+                    'generatorPaths'=>array(
+                        'bootstrap.gii',
+                    ),
+                    'password' => '123456'
+                ),
+            ),
         )
     );
