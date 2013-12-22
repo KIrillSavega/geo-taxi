@@ -39,7 +39,7 @@ class CustomerGii extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, private_email, mobile_phone, password', 'required'),
+			array('private_email, password', 'required'),
 			array('first_name, last_name, private_email, password', 'length', 'max'=>255),
 			array('mobile_phone', 'length', 'max'=>20),
 			// The following rule is used by search().

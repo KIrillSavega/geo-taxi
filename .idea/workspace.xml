@@ -26,7 +26,7 @@
     <file path="$PROJECT_DIR$/yiiframework/base/CApplication.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/logging/CLogger.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
     <file path="$PROJECT_DIR$/yiiframework/web/CController.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387720431302" ignored="false" />
-    <file path="/Employee.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727117317" ignored="false" />
+    <file path="/Employee.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387741759624" ignored="false" />
     <file path="/EmployeeCache.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727026564" ignored="false" />
     <file path="/CacheKey.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727038333" ignored="false" />
     <file path="/EmployeeDb.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387727295120" ignored="false" />
@@ -42,8 +42,10 @@
     <file path="/m131222_183450_customer_initial.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387737687642" ignored="false" />
     <file path="/CustomerIdentity.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387739123668" ignored="false" />
     <file path="/main.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387740073483" ignored="false" />
-    <file path="/RegistrationAction.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387741296961" ignored="false" />
+    <file path="/RegistrationAction.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387741946260" ignored="false" />
     <file path="/urlManager.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387740996658" ignored="false" />
+    <file path="$PROJECT_DIR$/apps/api/protected/runtime/gii-1.1.13/ModelCode.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387741847331" ignored="false" />
+    <file path="/LogoutAction.php" changelist="96c7b3a0-1e79-407f-9457-952a627fdeb1" time="1387741987663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +65,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="11" selection-start="951" selection-end="951" vertical-scroll-proportion="-8.208333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AuthorizationController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,16 +77,43 @@
       <file leaf-file-name="RegistrationAction.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/RegistrationAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="45" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-8.458333">
+            <state line="27" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.083333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDb.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LogoutAction.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/LogoutAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="51" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m131222_183450_customer_initial.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="37" selection-start="383" selection-end="383" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDb.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/components/customer/db/CustomerDb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="79" selection-start="574" selection-end="574" vertical-scroll-proportion="0.31034482">
+            <state line="56" column="34" selection-start="1930" selection-end="1930" vertical-scroll-proportion="-9.291667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDbImplementation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/components/base/BaseDbImplementation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="16" selection-start="2888" selection-end="2888" vertical-scroll-proportion="-13.375">
               <folding />
             </state>
           </provider>
@@ -111,7 +131,7 @@
       <file leaf-file-name="Customer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/components/customer/models/Customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="90" selection-start="303" selection-end="906" vertical-scroll-proportion="-13.125">
+            <state line="17" column="52" selection-start="614" selection-end="614" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -120,7 +140,7 @@
       <file leaf-file-name="Customer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/components/customer/Customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="26" selection-start="383" selection-end="383" vertical-scroll-proportion="-8.125">
+            <state line="25" column="48" selection-start="670" selection-end="670" vertical-scroll-proportion="-11.791667">
               <folding />
             </state>
           </provider>
@@ -130,15 +150,6 @@
         <entry file="file://$PROJECT_DIR$/core/validators/PhoneNumberValidator.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="31" selection-start="302" selection-end="302" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/protected/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-18.458334">
               <folding />
             </state>
           </provider>
@@ -154,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/components/employee/cache/EmployeeCache.php" />
-        <option value="$PROJECT_DIR$/core/components/employee/db/EmployeeDb.php" />
         <option value="$PROJECT_DIR$/core/components/employee/Employee.php" />
         <option value="$PROJECT_DIR$/core/containers/EmployeeContainer.php" />
         <option value="$PROJECT_DIR$/apps/storage/css/general.css" />
@@ -163,7 +172,6 @@
         <option value="$PROJECT_DIR$/core/containers/CustomerContainer.php" />
         <option value="$PROJECT_DIR$/apps/api/index.php" />
         <option value="$PROJECT_DIR$/apps/api/protected/views/layouts/documentation.php" />
-        <option value="$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php" />
         <option value="$PROJECT_DIR$/core/config/params.php" />
         <option value="$PROJECT_DIR$/core/autocompleteIDE/autocomplete.php" />
         <option value="$PROJECT_DIR$/core/containers/ApiSessionContainer.php" />
@@ -174,12 +182,15 @@
         <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/LoginAction.php" />
         <option value="$PROJECT_DIR$/apps/api/protected/config/main.php" />
         <option value="$PROJECT_DIR$/core/config/main.php" />
-        <option value="$PROJECT_DIR$/core/components/customer/models/Customer.php" />
-        <option value="$PROJECT_DIR$/core/components/customer/Customer.php" />
         <option value="$PROJECT_DIR$/apps/api/protected/config/urlManager.php" />
         <option value="$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php" />
-        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/RegistrationAction.php" />
         <option value="$PROJECT_DIR$/core/components/customer/db/CustomerDb.php" />
+        <option value="$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php" />
+        <option value="$PROJECT_DIR$/core/components/customer/Customer.php" />
+        <option value="$PROJECT_DIR$/core/components/customer/models/Customer.php" />
+        <option value="$PROJECT_DIR$/core/components/base/BaseDbImplementation.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/RegistrationAction.php" />
+        <option value="$PROJECT_DIR$/apps/api/protected/controllers/authorization/LogoutAction.php" />
       </list>
     </option>
   </component>
@@ -282,6 +293,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo-taxi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -580,7 +631,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-8" width="1384" height="760" extended-state="0" />
+    <frame x="-9" y="-8" width="1384" height="760" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -663,20 +714,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/components/customer/cache/CustomerCache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="52" selection-start="2055" selection-end="2055" vertical-scroll-proportion="-23.87755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/storage/css/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1079" column="20" selection-start="37964" selection-end="37964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/cli/commands/MigrateCustomerCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="21" selection-start="28" selection-end="28" vertical-scroll-proportion="-1.25">
@@ -708,13 +745,6 @@
     <entry file="file://$PROJECT_DIR$/apps/api/protected/views/layouts/documentation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="45" selection-start="651" selection-end="651" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
@@ -796,20 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/validators/PhoneNumberValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="302" selection-end="302" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/components/customer/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="383" selection-end="383" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/AuthorizationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="-14.375">
@@ -817,9 +833,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/components/customer/models/Customer.php">
+    <entry file="file://$PROJECT_DIR$/core/migrations/customer/m131222_183450_customer_initial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="90" selection-start="303" selection-end="906" vertical-scroll-proportion="-13.125">
+        <state line="12" column="37" selection-start="383" selection-end="383" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/validators/PhoneNumberValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="302" selection-end="302" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
@@ -831,16 +854,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/RegistrationAction.php">
+    <entry file="file://$PROJECT_DIR$/core/components/customer/models/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="45" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-8.458333">
+        <state line="17" column="52" selection-start="614" selection-end="614" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/customer/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="48" selection-start="670" selection-end="670" vertical-scroll-proportion="-11.791667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/components/base/BaseDbImplementation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="16" selection-start="2888" selection-end="2888" vertical-scroll-proportion="-13.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/components/customer/db/CustomerDb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="79" selection-start="574" selection-end="574" vertical-scroll-proportion="0.31034482">
+        <state line="56" column="34" selection-start="1930" selection-end="1930" vertical-scroll-proportion="-9.291667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/RegistrationAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.083333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/protected/controllers/authorization/LogoutAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="51" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
           <folding />
         </state>
       </provider>

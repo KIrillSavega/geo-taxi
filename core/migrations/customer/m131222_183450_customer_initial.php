@@ -7,10 +7,10 @@ class m131222_183450_customer_initial extends CDbMigration
         $this->execute("
         CREATE TABLE IF NOT EXISTS `customer` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
-          `first_name` varchar(255) NOT NULL,
-          `last_name` varchar(255) NOT NULL,
+          `first_name` varchar(255) NULL,
+          `last_name` varchar(255) NULL,
           `private_email` varchar(255) NOT NULL,
-          `mobile_phone` varchar(20) NOT NULL,
+          `mobile_phone` varchar(20) NULL,
           `password` varchar(255) NOT NULL,
           PRIMARY KEY (`id`)
         ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;

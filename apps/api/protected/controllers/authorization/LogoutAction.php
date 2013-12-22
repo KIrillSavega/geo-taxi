@@ -5,6 +5,6 @@ class LogoutAction extends BaseApiAction
     public function run()
     {
         Yii::app()->user->logout();
-        $this->renderSuccess( array("logoutResult"=>"success") );
+        $this->renderSuccess( array("success"=>true) );
     }
 }

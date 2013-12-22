@@ -16,8 +16,6 @@ class Customer extends \CustomerGii
             array('mobile_phone', 'core.validators.customer.UniqueCustomerPhoneValidator'),
             array('mobile_phone', 'core.validators.PhoneNumberValidator'),
             array('password', 'length', 'min' => 6),
-            array('first_name', 'length', 'min' => 1),
-            array('last_name', 'length', 'min' => 1),
             array('first_name', 'core.validators.customer.CustomerFirstLastNameValidator'),
             array('last_name', 'core.validators.customer.CustomerFirstLastNameValidator'),
         ));
