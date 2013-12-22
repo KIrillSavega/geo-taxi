@@ -1,0 +1,9 @@
+<?php
+return array(
+    'class' => 'core.components.fileUploader.FileUploader',
+    'uploaderClassName' => 'LocalFilesystemUploader',
+    'fileStorageUrl' => 'http://192.168.1.162/comcash-company/apps/storage',
+    'uploaderOptions' => array(
+        'uploadFolder' => '/var/www/comcash-company/apps/storage',
+    ),
+);

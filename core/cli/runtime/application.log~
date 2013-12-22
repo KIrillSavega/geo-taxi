@@ -1,0 +1,762 @@
+2013/11/29 15:22:53 [error] [exception.RedisException] exception 'RedisException' with message 'Redis server went away' in /var/www/comcash-company/core/components/cache/RedisCacheComponent.php:28
+Stack trace:
+#0 /var/www/comcash-company/core/components/cache/RedisCacheComponent.php(28): Redis->select(1)
+#1 /var/www/comcash-company/yiiframework/base/CModule.php(387): RedisCacheComponent->init()
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(103): CModule->getComponent('redisCache')
+#3 /var/www/comcash-company/core/components/base/BaseAppComponent.php(77): CModule->__get('redisCache')
+#4 /var/www/comcash-company/core/components/subscribition/Subscribition.php(38): BaseAppComponent->init()
+#5 /var/www/comcash-company/yiiframework/base/CModule.php(387): Subscribition->init()
+#6 /var/www/comcash-company/yiiframework/base/CModule.php(523): CModule->getComponent('subscribition')
+#7 /var/www/comcash-company/yiiframework/base/CApplication.php(152): CModule->preloadComponents()
+#8 /var/www/comcash-company/yiiframework/YiiBase.php(125): CApplication->__construct(Array)
+#9 /var/www/comcash-company/yiiframework/YiiBase.php(113): YiiBase::createApplication('CConsoleApplica...', Array)
+#10 /var/www/comcash-company/core/cli.php(13): YiiBase::createConsoleApplication(Array)
+#11 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#12 {main}
+---
+2013/11/29 15:26:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'comcash'@'localhost' (using password: YES)' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbDelivery')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateDeliveryCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:30:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_delivery'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbDelivery')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateDeliveryCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:30:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_delivery.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:30:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_products'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbCategory')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCategoryCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:31:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_products.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:31:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_notification'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbNotification')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateNotificationCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:31:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_notification.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:31:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_eshop'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbEShop')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateEshopCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:31:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_eshop.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:31:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_sales'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbSales')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateTenderCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:31:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_sales.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:31:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_storage'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbStorage')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateStorageCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:32:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_storage.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:32:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_crm'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbCRM')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCRMCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:32:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_crm.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:32:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_employee_activity_log'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbEmployeeActiv...')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateEmployeeActivityCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:32:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_employee_activity_log.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:32:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_location'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbLocation')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateLocationCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:33:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_location.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:33:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_company'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/base/CModule.php(103): CModule->getComponent('dbCompany')
+#4 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(35): CModule->__get('dbCompany')
+#5 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(2309): CompanyGii->getDbConnection()
+#6 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#7 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#8 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#9 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#10 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#11 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#12 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#13 [internal function]: MigrateCommand->actionUp(Array)
+#14 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#15 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#16 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#17 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#18 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#19 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#20 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#21 {main}
+---
+2013/11/29 15:34:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company.company' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `company`.
+2013/11/29 15:34:01 [error] [exception.CDbException] exception 'CDbException' with message 'The table "company" for active record class "core\components\company\models\Company" cannot be found in the database.' in /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#1 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#2 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#3 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#4 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:34:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company.company' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `company`.
+2013/11/29 15:34:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "company" for active record class "core\components\company\models\Company" cannot be found in the database.' in /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#1 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#2 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#3 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#4 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:35:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company.company' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `company`.
+2013/11/29 15:35:08 [error] [exception.CDbException] exception 'CDbException' with message 'The table "company" for active record class "core\components\company\models\Company" cannot be found in the database.' in /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#1 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#2 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#3 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#4 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:35:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company.company' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `company`.
+2013/11/29 15:35:16 [error] [exception.CDbException] exception 'CDbException' with message 'The table "company" for active record class "core\components\company\models\Company" cannot be found in the database.' in /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#1 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#2 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#3 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#4 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:36:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_warehouse'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbWarehouse')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateWarehouseCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:36:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_warehouse.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:36:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_customer'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbCustomer')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCustomerCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:36:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_customer.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:36:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_employee'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbEmployee')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateEmployeeCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:36:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_employee.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:36:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_measure'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbMeasure')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateMeasureCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:36:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_measure.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:36:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_quote'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbQuote')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateQuoteCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:37:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_quote.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:37:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/11/29 15:37:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_tax'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbTax')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateTaxCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/11/29 15:37:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_tax.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/04 16:05:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'is_reconciled'. The SQL statement executed was: 
+        ALTER TABLE  `account_entry` ADD  `is_reconciled` INT( 11 ) NOT NULL;
+        .
+2013/12/04 16:05:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'is_reconciled'. The SQL statement executed was: 
+        ALTER TABLE  `account_entry` ADD  `is_reconciled` INT( 11 ) NOT NULL;
+        ' in /var/www/comcash-company/yiiframework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbMigration.php(159): CDbCommand->execute(Array)
+#1 /var/www/comcash-company/core/migrations/company/m131204_135002_add_is_reconciled_field_to_account_entry_create_default_account_reconciliations.php(9): CDbMigration->execute('?        ALTER ...')
+#2 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131204_135002_add_is_reconciled_field_to_account_entry_create_default_account_reconciliations->up()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131204_135002_...')
+#4 [internal function]: MigrateCommand->actionUp(Array)
+#5 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCompanyCommand), Array)
+#6 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#7 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#9 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#10 /var/www/comcash-company/core/cli.php(20): CApplication->run()
+#11 /var/www/comcash-company/core/shell(4): require_once('/var/www/comcas...')
+#12 {main}
+---
+2013/12/19 11:31:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_products_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbCategory')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCategoryCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:31:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_products_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 11:31:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_eshop_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbEShop')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateEshopCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:31:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_eshop_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 11:31:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_sales_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbSales')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateTenderCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:31:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_sales_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 11:31:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_storage_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbStorage')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateStorageCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:32:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_storage_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 11:32:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_location_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbLocation')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateLocationCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:33:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_location_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 11:33:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_company_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/base/CModule.php(103): CModule->getComponent('dbCompany')
+#4 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(35): CModule->__get('dbCompany')
+#5 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(2309): CompanyGii->getDbConnection()
+#6 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#7 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#8 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#9 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#10 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#11 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#12 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#13 [internal function]: MigrateCommand->actionUp(Array)
+#14 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#15 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#16 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#17 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#18 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#19 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#20 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#21 {main}
+---
+2013/12/19 11:33:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_company_test.company' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `company`.
+2013/12/19 11:33:46 [error] [exception.CDbException] exception 'CDbException' with message 'The table "company" for active record class "core\components\company\models\Company" cannot be found in the database.' in /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(core\components\company\models\Company))
+#1 /var/www/comcash-company/core/components/company/models/gii/CompanyGii.php(27): CActiveRecord::model('core\components...')
+#2 /var/www/comcash-company/core/components/company/models/Company.php(8): CompanyGii::model('core\components...')
+#3 /var/www/comcash-company/core/components/company/db/CompanyDb.php(127): core\components\company\models\Company::model()
+#4 /var/www/comcash-company/core/migrations/sales/m131107_151537_create_balance2account_table.php(17): CompanyDb->findCompaniesIds()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(385): m131107_151537_create_balance2account_table->up()
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m131107_151537_...')
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateSalesCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 11:59:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_warehouse_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbWarehouse')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateWarehouseCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:00:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_warehouse_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbWarehouse')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateWarehouseCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:00:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_warehouse_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:00:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_customer_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbCustomer')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCustomerCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:00:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_customer_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:00:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_employee_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbEmployee')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateEmployeeCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:01:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_employee_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_measure_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbMeasure')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateMeasureCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:01:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_measure_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:01:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_quote_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbQuote')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateQuoteCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:01:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_quote_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:01:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'cmp_tax_test'' in /var/www/comcash-company/yiiframework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/comcash-company/yiiframework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/comcash-company/yiiframework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/comcash-company/yiiframework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(442): CModule->getComponent('dbTax')
+#4 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/comcash-company/yiiframework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateTaxCommand), Array)
+#9 /var/www/comcash-company/core/cli/commands/MigrateAllCommand.php(18): CConsoleCommand->run(Array)
+#10 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): MigrateAllCommand->run(Array)
+#11 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#12 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#13 /var/www/comcash-company/core/testcli.php(20): CApplication->run()
+#14 /var/www/comcash-company/core/testshell(4): require_once('/var/www/comcas...')
+#15 {main}
+---
+2013/12/19 12:01:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cmp_tax_test.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/19 12:05:19 [error] [php] fsockopen(): unable to connect to ssl://localhost:25 (Connection refused) (/var/www/comcash-company/core/extensions/mail/vendors/swiftMailer/classes/Swift/Transport/StreamBuffer.php:233)
+Stack trace:
+#0 /var/www/comcash-company/core/extensions/mail/vendors/swiftMailer/classes/Swift/Transport/AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 /var/www/comcash-company/core/extensions/mail/vendors/swiftMailer/classes/Swift/Mailer.php(74): Swift_SmtpTransport->start()
+#2 /var/www/comcash-company/core/extensions/mail/YiiMail.php(133): Swift_Mailer->send()
+#3 /var/www/comcash-company/core/components/notification/Notification.php(185): YiiMail->send()
+#4 /var/www/comcash-company/core/cli/commands/RunCoreTestsCommand.php(90): Notification->sendEmail()
+#5 /var/www/comcash-company/core/cli/commands/RunCoreTestsCommand.php(37): RunCoreTestsCommand->sendReport()
+#6 unknown(0): RunCoreTestsCommand->actionIndex()
+#7 /var/www/comcash-company/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#8 /var/www/comcash-company/yiiframework/console/CConsoleCommandRunner.php(67): RunCoreTestsCommand->run()
+#9 /var/www/comcash-company/yiiframework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#10 /var/www/comcash-company/yiiframework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#11 /var/www/comcash-company/core/cli.php(20): CConsoleApplication->run()
+#12 /var/www/comcash-company/core/shell(4): require_once()
+
